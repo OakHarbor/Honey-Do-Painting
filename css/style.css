@@ -293,7 +293,7 @@
     background: transparent;
     height: 200px;
     width: 180px;
-    border: 10px solid rgb(255, 255, 255, .3);
+    border: 10px solid rgba(255, 255, 255, .3);
 }
 
 .why-item {
@@ -460,6 +460,19 @@
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+/* Iphone 5 */
+@media screen and (min-width: 300px) and (max-width: 330px) {
+
+    .content h3:first-child {
+        font-size: 25px;
+    }
+
+    .right-card svg {
+        margin-bottom: 150px;
+    }
+
 }
 
 /*-- -------------------------- -->
