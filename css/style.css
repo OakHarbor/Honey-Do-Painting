@@ -72,7 +72,7 @@
     top: 12px;
 }
 
-.about-button {
+.about-button, .quote-button {
     width: 188px;
 }
 
@@ -165,6 +165,12 @@
     margin-bottom: 50px;
 }
 
+.icon-container {
+    padding: 0 36px;
+    padding-bottom: 70px;
+    max-width: 1250px;
+}
+
 .icon-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -209,6 +215,20 @@
             justify-content: center;
 }
 
+.corinthians {
+    font-size: 25px;
+}
+
+.corinthians span {
+    font-weight: bold;
+    font-size: 35px;
+    color: var(--primary);
+}
+
+.c-2 {
+    font-weight: bold;
+}
+
 .service-button {
     width: 250px;
     margin: auto;
@@ -226,7 +246,7 @@
     bottom: -80px;
     left: -30px;
     width: 450px;
-    opacity: .3;
+    opacity: .1;
 }
 
 .honeycomb-short {
@@ -314,7 +334,7 @@
     position: absolute;
     background: transparent;
     height: 200px;
-    width: 180px;
+    width: 130px;
     border: 10px solid rgba(255, 255, 255, .3);
 }
 
@@ -322,6 +342,12 @@
     position: relative;
     z-index: 10;
     margin: 40px auto;
+}
+
+.why-item span {
+    font-size: 20px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, .7);
 }
 
 .why-item p,
@@ -338,7 +364,7 @@
 .why-item p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 
@@ -406,7 +432,7 @@
 }
 
 .card:nth-child(1) {
-    background:url("../images/deck.jpg");
+    background:url("../images/cabinet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -418,7 +444,7 @@
 }
 
 .card:nth-child(3) {
-    background:url("../images/repair.jpg");
+    background:url("../images/kitchen.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -510,8 +536,9 @@
     bottom: -170px;
     left: -30px;
     width: 450px;
-    opacity: .3;
+    opacity: .1;
     z-index: -1;
+    transform: rotate(.5deg);
 }
 
 /* Iphone 5 */
@@ -615,6 +642,10 @@
     top: -50px;
 }
 
+.review span {
+    font-weight: bold;
+}
+
 .review-p {
     position: relative;
     z-index: 10;
@@ -670,7 +701,7 @@
 }
 
 .review p:nth-child(3) {
-    font-size: 14px !important;
+    font-size: 17px !important;
     margin-bottom: 0;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -948,6 +979,7 @@
     <---           WHY US           -->
     <--- -------------------------- -*/
 
+    
     .card h2 {
         margin-left: 0;
         margin-top: 5px;
@@ -1180,7 +1212,7 @@
         text-align: left;
         line-height: 1.6em;
         padding: 30px 0;
-        width: 680px;
+        width: 550px;
         position: relative;
         font-weight: normal;
     }
@@ -1386,9 +1418,14 @@
                 flex-direction: row;
     }
 
+    .card {
+        width: 33.3%;
+    }
+
     .card h2 {
         margin-left: 0;
         margin-top: 0;
+        width: 229px;
     }
 
     /*-- -------------------------- -->
