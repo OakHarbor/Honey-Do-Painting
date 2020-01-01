@@ -254,6 +254,15 @@ h1, h2, h3, h4, h5, h6 {
 	display: none;
 }
 
+.nav-comb {
+    display: block !important;
+    position: absolute;
+    width: 530px;
+    transform: rotate(120deg);
+    right: -320px;
+    top: 250px;
+}
+
 /* Top Mobile Navigation */
 .mobile-wrapper {
 	height: 70px;
@@ -297,9 +306,11 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1700px;
     margin-left: auto !important;
     margin-right: auto !important;
+    overflow: hidden;
 }
 
 .side-nav {
+    position: relative;
 	padding: 40px 0;
 	position: absolute;
 	right: 2em;

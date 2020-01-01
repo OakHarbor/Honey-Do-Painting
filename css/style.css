@@ -765,7 +765,7 @@
 .yellow-comb {
     position: absolute;
     bottom: -100px;
-    left: 0px;
+    left: -20px;
     width: 420px;
     transform: rotate(1deg);
 }
