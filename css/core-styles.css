@@ -538,8 +538,9 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 1025px) {
 
 	/* Hidden Elements */
-	.mobile-wrapper {
-		display: none;
+    .mobile-wrapper,
+    .nav-comb {
+		display: none !important;
 	}
 
 	/* Un-Hidden Elements */
