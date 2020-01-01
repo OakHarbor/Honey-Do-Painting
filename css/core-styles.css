@@ -10,7 +10,7 @@
 }
 
 :root {
-    --primary: rgb(253, 118, 45);
+    --primary: #FFBA19;
 }
 
 body, html {
@@ -293,7 +293,10 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-transition: .3s ease-in-out;
 	-o-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-	z-index: 100;
+    z-index: 100;
+    max-width: 1700px;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .side-nav {

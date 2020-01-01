@@ -80,6 +80,10 @@
 <---           SERVICE          -->
 <--- -------------------------- -*/
 
+#customer-service {
+    position: relative;
+}
+
 /* Floating Box */
 .floating-box {
     background: #252525;
@@ -208,7 +212,25 @@
 .service-button {
     width: 250px;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
+    position: relative;
+    z-index: 30;
+}
+
+.honeycomb-long {
+    display: none;
+}
+
+#customer-service img {
+    position: absolute;
+    bottom: -80px;
+    left: -30px;
+    width: 450px;
+    opacity: .3;
+}
+
+.honeycomb-short {
+    transform: rotate(1deg);
 }
 
 /*-- -------------------------- -->
@@ -339,7 +361,13 @@
 <---          WHY US            -->
 <--- -------------------------- -*/
  
+#why-us {
+    position: relative;
+}
+
 .why-us-float {
+    position: relative;
+    z-index: 10;
     -webkit-transform: translateY(-130px);
         -ms-transform: translateY(-130px);
             transform: translateY(-130px);
@@ -439,13 +467,28 @@
     color: var(--primary);
 }
 
+.right {
+    position: relative;
+}
+
 .right-card {
     height: 200px;
     margin-bottom: 50px;
+    position: relative;
+    z-index: 40;
+}
+
+.right img {
+    position: absolute;
+    width: 500px;
+    top: -409px;
+    left: -180px;
+    transform: rotate(140deg);
+    z-index: -1;
 }
 
 .right-card:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 90px;
 }
 
 .right-card svg {
@@ -460,6 +503,15 @@
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+#why-us img {
+    position: absolute;
+    bottom: -170px;
+    left: -30px;
+    width: 450px;
+    opacity: .3;
+    z-index: -1;
 }
 
 /* Iphone 5 */
@@ -646,6 +698,8 @@
 #meet-the-team {
     padding: 50px 0px;
     background: #f9f9f9;
+    position: relative;
+    padding-bottom: 150px;
 }
 
 #meet-the-team h2 {
@@ -708,6 +762,18 @@
     width: 200px;
 }
 
+.yellow-comb {
+    position: absolute;
+    bottom: -100px;
+    left: 0px;
+    width: 420px;
+    transform: rotate(1deg);
+}
+
+.honeycomb-yellow-long {
+    display: none;
+}
+
 /*-- -------------------------- -->
 <---           CONTACT          -->
 <--- -------------------------- -*/
@@ -763,6 +829,14 @@
 
 /* Tablets */
 @media screen and (min-width: 500px) and (max-width: 1024px) {
+
+    .honeycomb-short {
+        display: none;
+    }
+
+    .honeycomb-long {
+        display: block;
+    }
 
     /*-- -------------------------- -->
     <---          LANDING           -->
@@ -825,6 +899,13 @@
         margin-bottom: 100px;
     }
 
+    #customer-service img {
+        position: absolute;
+        bottom: -40px;
+        width: 1200px;
+        transform: rotate(.5deg);
+    }
+
     /*-- -------------------------- -->
     <---          TRUST US          -->
     <--- -------------------------- -*/
@@ -871,6 +952,28 @@
         margin-left: 0;
         margin-top: 5px;
         width: 400px;
+    }
+
+    .honeycomb-short-why {
+        display: none !important;
+    }
+
+    #why-us img {
+        display: block;
+        position: absolute;
+        bottom: -40px;
+        width: 1200px;
+        transform: rotate(.5deg);
+    }
+
+    .yellow-comb {
+        display: none;
+    }
+
+    .honeycomb-yellow-long {
+        position: absolute;
+        bottom: -20px;
+        width: 900px;
     }
 
     /*-- -------------------------- -->
@@ -926,7 +1029,7 @@
     }
 
     /*-- -------------------------- -->
-    <---         TESTIMOBIALS       -->
+    <---         TESTIMONIALS       -->
     <--- -------------------------- -*/
 
     .review-group {
@@ -971,6 +1074,13 @@
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
+    }
+
+    .honeycomb-yellow-long {
+        display: block;
+        left: -200px;
+        width: 2000px;
+        bottom: -100px;
     }
 
     /*-- -------------------------- -->
@@ -1171,7 +1281,19 @@
     }
 
     .service-button {
-        margin: 50px auto 50px auto;
+        margin: 50px auto 150px auto;
+    }
+
+    .honeycomb-short {
+        display: none !important;
+    }
+
+    .honeycomb-long {
+        display: block;
+        bottom: -140px !important;
+        width: 3000px !important;
+        left: -860px !important;
+        transform: rotate(.5deg);
     }
 
     /*-- -------------------------- -->
@@ -1308,6 +1430,14 @@
         width: 320px;
     }
 
+    .honeycomb-short-why {
+        display: none;
+    }
+
+    .hcw {
+        left: -200px !important;
+    }
+
     /*-- -------------------------- -->
     <---             FAQ            -->
     <--- -------------------------- -*/
@@ -1413,6 +1543,19 @@
     .team-button {
         margin-top: 90px;
         margin-bottom: 50px;
+    }
+
+    .yellow-comb {
+        display: none;
+    }
+
+    .honeycomb-yellow-long {
+        display: block;
+        position: absolute;
+        width: 3000px;
+        bottom: -130px;
+        left: -240px;
+        transform: rotate(.5deg);
     }
 
     /*-- -------------------------- -->
