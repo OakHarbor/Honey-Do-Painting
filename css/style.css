@@ -167,7 +167,7 @@
 
 .icon-container {
     padding: 0 36px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     max-width: 1250px;
 }
 
@@ -246,7 +246,7 @@
     bottom: -80px;
     left: -30px;
     width: 450px;
-    opacity: .1;
+    opacity: .05;
 }
 
 .honeycomb-short {
@@ -536,7 +536,7 @@
     bottom: -170px;
     left: -30px;
     width: 450px;
-    opacity: .1;
+    opacity: .05;
     z-index: -1;
     transform: rotate(.5deg);
 }
@@ -1259,6 +1259,10 @@
         top: -100px;
         opacity: 1;
         z-index: 100;
+    }
+
+    .first-box p:nth-child(2) {
+        font-size: 20px;
     }
 
     /*-- -------------------------- -->
