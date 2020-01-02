@@ -1607,6 +1607,10 @@
         background-attachment: fixed;
     }
 
+    #contact-strip:before {
+        top: -1px;
+    }
+
     .contact-group {
         display: -webkit-box;
         display: -ms-flexbox;

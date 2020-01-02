@@ -2,11 +2,517 @@
 <---           LANDING          -->
 <--- -------------------------- -*/
 
+#hero {
+    min-height: 400px;
+    height: 400px;
+}
+
+#home-h {
+    width: 200px;
+    text-align: center;
+    font-size: 55px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    height: 300px;
+}
+
+#home-h:before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    border: 10px solid rgba(255,218,45, .4);
+    z-index: -1;
+}
+
+/*-- -------------------------- -->
+<---            ABOUT           -->
+<--- -------------------------- -*/
+
+#our-story {
+    padding: 50px 0;
+}
+
+.about-container img {
+    width: 100%;
+    margin: 0px auto 30px auto;
+}
+
+.about-group h2 {
+    margin-bottom: 10px;
+}
+
+.about-group span {
+    color: var(--primary);
+}
+
+.first-p {
+    margin-bottom: 20px;
+}
+
+.number-item {
+    padding: 15px 0;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.number-item:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 0;
+}
+
+.number-item h3 {
+    color: var(--primary);
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+/*-- -------------------------- -->
+<---            ICONS           -->
+<--- -------------------------- -*/
+
+#qualities {
+    background: url("/images/kitchen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 50px 36px;
+}
+
+#qualities:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--primary);
+    opacity: .85;
+}
+
+.quality-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quality-item {
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 20;
+}
+
+.quality-item:last-child {
+    padding-bottom: 0;
+}
+
+.icon-box {
+    height: 150px;
+    width: 150px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.icon-box svg {
+    width: 70px;
+    height: auto;
+}
+
+.quality-item h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.quality-item p {
+    text-align: center;
+    color: #fff;
+}
+
+/*-- -------------------------- -->
+<---            BOXES           -->
+<--- -------------------------- -*/
+
+/* Top Squares */
+#top-squares {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.right-square {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 50px;
+    background: url("/images/pergola.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    order: 1;
+    position: relative;
+}
+
+.right-square:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .4;
+}
+
+.top-square {
+    order: 2;
+    padding-bottom: 50px;
+}
+
+.top-square h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.top-square h3 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.7em;
+}
+
+/* Middle Squres */
+#middle-square {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.left-square {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 50px;
+    background: url("/images/stainging.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    order: 1;
+    position: relative;
+}
+
+.left-square:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .4;
+}
+
+.middle-square {
+    order: 2;
+    padding-bottom: 50px;
+}
+
+.middle-square h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.middle-square h3 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.7em;
+}
+
+/* Bottom Squares */
+#bottom-square {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.right-square-bottom {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 50px;
+    background: url("/images/mission.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    order: 1;
+    position: relative;
+}
+
+.right-square-bottom:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .4;
+}
+
+.bottom-square {
+    order: 2;
+    padding-bottom: 50px;
+}
+
+.bottom-square h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.bottom-square h3 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.7em;
+}
+
+/*-- -------------------------- -->
+<---            TEAM            -->
+<--- -------------------------- -*/
+
+#meet-the-team {
+    padding: 50px 0px;
+    background: #f9f9f9;
+}
+
+#meet-the-team h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+#meet-the-team h2 span {
+    color: var(--primary);
+}
+
+#meet-the-team h3 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.7em;
+    margin-bottom: 50px;
+}
+
+.team-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    background: #fff;
+}
+
+.team-card:last-child {
+    margin-bottom: 0;
+}
+
+.team-card img {
+    width: 100%;
+}
+
+.team-content {
+    height: auto;
+    padding: 25px;
+    background: #fff;
+}
+
+.team-card p:first-child {
+    font-size: 21px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.team-card p span {
+    color: var(--primary)
+}
+
+.team-card p:nth-child(2) {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #808080;
+}
+
+.team-button {
+    display: block;
+    margin: 50px auto 0 auto;
+    width: 200px;
+}
+
 
 
 /* Tablets */
 @media screen and (min-width: 500px) and (max-width: 1024px) {
 
+    /*-- -------------------------- -->
+    <---         OUR STORY          -->
+    <--- -------------------------- -*/
+
+    .about-group h2 {
+        margin-bottom: 20px;
+    }
+
+    .first-p {
+        margin-bottom: 15px;
+    } 
+
+    .number-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /*-- -------------------------- -->
+    <---            ICONS           -->
+    <--- -------------------------- -*/
+
+    .quality-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 50px;
+        max-width: 630px;
+        margin: auto;
+    }
+
+    .quality-item {
+        width: 300px;
+    }
+
+    .quality-item:last-child {
+        margin-bottom: 90px;
+    }
+
+    /*-- -------------------------- -->
+    <---         TOP SQUARE         -->
+    <--- -------------------------- -*/
+
+    #top-squares {
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        margin-bottom: 0;
+    }
+
+    .top-square {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0;
+        height: 400px;
+        padding-top: 50px;
+    }
+
+    /*-- -------------------------- -->
+    <---        MIDDLE SQUARE       -->
+    <--- -------------------------- -*/
+
+    #middle-square {
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        margin-bottom: 0;
+    }
+
+    .middle-square {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0;
+        height: 400px;
+        order: 1;
+        text-align: right;
+        padding-top: 50px;
+    }
+
+    .middle-square h2 {
+        text-align: right;
+        width: 100%;
+    }
+
+    .left-square {
+        order: 2;
+    }
+
+    /*-- -------------------------- -->
+    <---        BOTTOM SQUARE       -->
+    <--- -------------------------- -*/
+
+    #bottom-square {
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        margin-bottom: 0;
+    }
+
+    .bottom-square {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0;
+        height: 400px;
+        text-align: left;
+        padding-top: 50px;
+    }
+
+    .bottom-square h2 {
+        text-align: left;
+        width: 100%;
+    }
+
+    /*-- -------------------------- -->
+    <---        MEET THE TEAM       -->
+    <--- -------------------------- -*/
+
+    #meet-the-team {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .team-card {
+        width: 300px;
+        margin-bottom: 0;
+    }
+
+    .team-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
 
 }
 
@@ -14,9 +520,228 @@
 @media screen and (min-width: 1025px) {
 
     /*-- -------------------------- -->
-    <---           LANDING          -->
+    <---          LANDING           -->
     <--- -------------------------- -*/
 
+    #hero {
+        height: 700px;
+    }
+
+    /*-- -------------------------- -->
+    <---         OUR STORY          -->
+    <--- -------------------------- -*/
+
+    #our-story {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .about-container img {
+        height: 500px;
+        width: auto;
+    }
+
+    .about-group {
+        width: 600px;
+        margin: auto;
+    }
+
+    .number-group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .number-item {
+        width: 180px;
+        margin-bottom: 0;
+    }
+
+    .number-item:nth-child(1) {
+        width: 150px;
+    }
+
+    .number-item:nth-child(3) {
+        width: 130px;
+    }
+
+    /*-- -------------------------- -->
+    <---         QUALITIES         -->
+    <--- -------------------------- -*/
+
+    #qualities {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-attachment: fixed;
+    }
+
+    .quality-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    .quality-item {
+        padding: 0;
+        width: 350px;
+    }
+
+    .icon-box {
+        margin-bottom: 60px;
+    }
+
+    .quality-item:last-child {
+        margin-bottom: 0px;
+    }
+
+    /*-- -------------------------- -->
+    <---        TOP SQUARES         -->
+    <--- -------------------------- -*/
+
+    #top-squares {
+        display: flex;
+        flex-direction: row;
+        height: 700px;
+        margin-bottom: 0;
+    }
+
+    .top-square {
+        width: 40%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .top-square h3 {
+        width: 400px;
+    }
+
+    .right-square {
+        width: 60%;
+        height: 700px;
+        margin: 0;
+    }
+
+    /*-- -------------------------- -->
+    <---       MIDDLE SQUARES       -->
+    <--- -------------------------- -*/
+
+    #middle-square {
+        display: flex;
+        flex-direction: row;
+        height: 700px;
+        margin-bottom: 0;
+    }
+
+    .middle-square {
+        width: 40%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        margin: 0;
+        order: 0;
+        padding-top: 50px;
+    }
+
+    .middle-square h2 {
+        text-align: right;
+        width: 100%;
+    }
+
+    .middle-square h3 {
+        width: 400px;
+        text-align: right;
+    }
+
+    .left-square {
+        width: 60%;
+        height: 700px;
+        margin: 0;
+        order: 1;
+    }
+
+    /*-- -------------------------- -->
+    <---       BOTTOM SQUARES       -->
+    <--- -------------------------- -*/
+
+    #bottom-square {
+        display: flex;
+        flex-direction: row;
+        height: 700px;
+        margin-bottom: 0;
+    }
+
+    .bottom-square {
+        width: 40%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0;
+        order: 1;
+        padding-top: 50px;
+    }
+
+    .bottom-square h2 {
+        text-align: left;
+        width: 100%;
+    }
+
+    .bottom-square h3 {
+        width: 400px;
+        text-align: left;
+    }
+
+    .right-square-bottom {
+        width: 60%;
+        height: 700px;
+        margin: 0;
+        order: 0;
+    }
+
+    /*-- -------------------------- -->
+    <---       MEET THE TEAM        -->
+    <--- -------------------------- -*/
+
+    #meet-the-team {
+        padding-top: 100px;
+    }
+
+    .team-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+
+    .team-card {
+        width: 350px;
+        margin: 0;
+    }
+
+    .team-button {
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
     
 
 }
