@@ -1,4 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
 /*-- -------------------------- -->
 <---           LANDING          -->
@@ -250,7 +249,9 @@
 }
 
 .honeycomb-short {
-    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+        -ms-transform: rotate(1deg);
+            transform: rotate(1deg);
 }
 
 /*-- -------------------------- -->
@@ -509,7 +510,9 @@
     width: 500px;
     top: -409px;
     left: -180px;
-    transform: rotate(140deg);
+    -webkit-transform: rotate(140deg);
+        -ms-transform: rotate(140deg);
+            transform: rotate(140deg);
     z-index: -1;
 }
 
@@ -538,7 +541,9 @@
     width: 450px;
     opacity: .05;
     z-index: -1;
-    transform: rotate(.5deg);
+    -webkit-transform: rotate(.5deg);
+        -ms-transform: rotate(.5deg);
+            transform: rotate(.5deg);
 }
 
 /* Iphone 5 */
@@ -798,7 +803,9 @@
     bottom: -100px;
     left: -20px;
     width: 420px;
-    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+        -ms-transform: rotate(1deg);
+            transform: rotate(1deg);
 }
 
 .honeycomb-yellow-long {
@@ -934,7 +941,9 @@
         position: absolute;
         bottom: -40px;
         width: 1200px;
-        transform: rotate(.5deg);
+        -webkit-transform: rotate(.5deg);
+            -ms-transform: rotate(.5deg);
+                transform: rotate(.5deg);
     }
 
     /*-- -------------------------- -->
@@ -995,7 +1004,9 @@
         position: absolute;
         bottom: -40px;
         width: 1200px;
-        transform: rotate(.5deg);
+        -webkit-transform: rotate(.5deg);
+            -ms-transform: rotate(.5deg);
+                transform: rotate(.5deg);
     }
 
     .yellow-comb {
@@ -1329,7 +1340,9 @@
         bottom: -140px !important;
         width: 3000px !important;
         left: -860px !important;
-        transform: rotate(.5deg);
+        -webkit-transform: rotate(.5deg);
+            -ms-transform: rotate(.5deg);
+                transform: rotate(.5deg);
     }
 
     /*-- -------------------------- -->
@@ -1596,7 +1609,9 @@
         width: 3000px;
         bottom: -130px;
         left: -240px;
-        transform: rotate(.5deg);
+        -webkit-transform: rotate(.5deg);
+            -ms-transform: rotate(.5deg);
+                transform: rotate(.5deg);
     }
 
     /*-- -------------------------- -->
