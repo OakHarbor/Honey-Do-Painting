@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 
 /*-- -------------------------- -->
 <---           LANDING          -->
@@ -73,6 +75,10 @@
 
 .about-button, .quote-button {
     width: 188px;
+}
+
+.white-comb {
+    display: none;
 }
 
 /*-- -------------------------- -->
@@ -933,6 +939,10 @@
         width: 300px;
     }
 
+    .icon-group p {
+        height: 150px;
+    }
+
     .service-button {
         margin-bottom: 100px;
     }
@@ -1048,14 +1058,19 @@
 
     .right-card {
         width: 300px;
+        margin-bottom: 100px;
+    }
+
+    .right-card svg {
+        margin-bottom: 150px;
     }
 
     .right-card:nth-child(3) {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     .right-card:last-child {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     /*-- -------------------------- -->
@@ -1166,12 +1181,13 @@
     <--- -------------------------- -*/
 
     #hero {
-        height: 800px;
+        height: 1100px;
         width: 100%;
-        background:url("../images/home.jpg");
+        background:url("../images/yellow-house.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        background-position-y: top;
         color: #fff;
         position: relative;
         display: -webkit-box;
@@ -1199,12 +1215,15 @@
     }
 
     .heroText {
-        padding: 70px 0 0;
+        padding: 0px 0 0;
         position: relative;
         z-index: 3;
         height: auto;
         margin-left: 0;
         width: 1100px !important;
+        -webkit-transform: translateY(-140px);
+            -ms-transform: translateY(-140px);
+                transform: translateY(-140px);
     }
 
     .heroText h1 {
@@ -1242,6 +1261,15 @@
         margin-right: 30px;
     }
 
+    .white-comb {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: auto;
+        z-index: 50;
+    }
+
     /*-- -------------------------- -->
     <---           GREY BOX         -->
     <--- -------------------------- -*/
@@ -1267,7 +1295,7 @@
                 flex-direction: row;
         margin: auto;
         position: absolute;
-        top: -100px;
+        top: -450px;
         opacity: 1;
         z-index: 100;
     }
@@ -1285,7 +1313,7 @@
     }
 
     .service-h2 {
-        margin-top: 200px;
+        margin-top: 0;
     }
 
     .service-p {
@@ -1310,6 +1338,8 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
@@ -1321,10 +1351,33 @@
             -ms-flex-pack: justify;
                 justify-content: space-between;
         padding-bottom: 0;
+        margin-top: 90px;
+        margin: auto;
+        width: 800px;
+        height: 600px;
+        margin-bottom: 60px;
+        margin-top: 60px;
     }
 
     .icon-group {
-        width: 230px;
+        width: 300px;
+        height: auto;
+        margin: 0;
+    }
+
+    .icon-group svg {
+        width: 80px;
+    }
+
+    .icon-group h3 {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .icon-group p {
+        height: 150px;
+        font-size: 13px;
     }
 
     .service-button {
@@ -1458,6 +1511,7 @@
             -ms-flex-direction: row;
                 flex-direction: row;
         padding-top: 70px;
+        padding-bottom: 100px;
     }
 
     .left {
@@ -1482,6 +1536,10 @@
 
     .right-card {
         width: 320px;
+    }
+
+    .right-card svg {
+        margin-bottom: 150px;
     }
 
     .honeycomb-short-why {
@@ -1525,6 +1583,7 @@
             flex-wrap: wrap;
         margin: auto;
         width: 900px;
+        padding-bottom: 100px;
     }
 
     .review-h3 {
@@ -1624,6 +1683,7 @@
 
     #contact-strip:before {
         top: -1px;
+        height: 100.5%;
     }
 
     .contact-group {
