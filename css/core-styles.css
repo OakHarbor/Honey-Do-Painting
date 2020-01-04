@@ -35,7 +35,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
 	padding: 0 36px;
-	margin: auto;
+    margin: auto;
+    max-width: 1100px;
 }
 
 .mobile-wrapper {
@@ -496,16 +497,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .nav-li {
-        margin-bottom: 50px !important;
+        margin-bottom: 30px !important;
     }
 
     .nav-li a {
-        font-size: 30px;
+        font-size: 20px;
     }
     
     .nav-comb {
-        width: 1300px;
-        right: -750px;
+        width: 1000px;
+        right: -500px;
         top: 570px;
     }
 	
