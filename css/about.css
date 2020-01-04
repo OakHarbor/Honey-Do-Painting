@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 /*-- -------------------------- -->
 <---           LANDING          -->
 <--- -------------------------- -*/
@@ -144,8 +146,7 @@
     right: 0;
     background: rgb(41,162,228);
     background: rgb(58,80,92);
-    background: -moz-radial-gradient(circle, rgba(58,80,92,1) 0%, rgba(34,58,71,1) 0%, rgba(9,36,51,1) 84%);
-    background: -webkit-radial-gradient(circle, rgba(58,80,92,1) 0%, rgba(34,58,71,1) 0%, rgba(9,36,51,1) 84%);
+    background: -o-radial-gradient(circle, rgba(58,80,92,1) 0%, rgba(34,58,71,1) 0%, rgba(9,36,51,1) 84%);
     background: radial-gradient(circle, rgba(58,80,92,1) 0%, rgba(34,58,71,1) 0%, rgba(9,36,51,1) 84%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3a505c",endColorstr="#092433",GradientType=1);
     opacity: .85;
@@ -296,7 +297,9 @@
 .top-square svg {
     position: absolute;
     top: -50px;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     left: 0;
 }
 
@@ -496,7 +499,9 @@
     }
 
     #home-h {
-        transform: translateY(-70px);
+        -webkit-transform: translateY(-70px);
+            -ms-transform: translateY(-70px);
+                transform: translateY(-70px);
         font-size: 70px;
     }
 
@@ -607,7 +612,9 @@
     .top-square svg {
         top: 0px;
         left: 0;
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
 
     /*-- -------------------------- -->
@@ -754,7 +761,9 @@
     }
 
     #home-h {
-        transform: translateY(-80px);
+        -webkit-transform: translateY(-80px);
+            -ms-transform: translateY(-80px);
+                transform: translateY(-80px);
         font-size: 70px;
     }
 
