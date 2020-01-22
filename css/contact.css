@@ -327,16 +327,16 @@ form p{
     <--- -------------------------- -*/
 
     #hero {
-        height: 600px;
+        height: 900px;
         background-attachment: fixed;
         position: relative;
     }
 
     #home-h {
         font-size: 70px;
-        -webkit-transform: translateY(50px);
-            -ms-transform: translateY(50px);
-                transform: translateY(50px);
+        -webkit-transform: translateY(-100px);
+            -ms-transform: translateY(-100px);
+                transform: translateY(-100px);
     }
 
     #hero img {
