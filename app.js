@@ -172,7 +172,7 @@ $fifteen.on("click", function(e) {
 });
 
 $sixteen.on("click", function(e) {
-  $modalSixeen.addClass("clicked");
+  $modalSixteen.addClass("clicked");
   $html.addClass("clicked");
 });
 
