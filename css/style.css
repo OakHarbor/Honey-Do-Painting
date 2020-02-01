@@ -278,7 +278,7 @@
     padding-top: 50px;
     text-align: center;
     font-size: 30px;
-    color: #f5f3f3;
+    color: #4c4c4c;
 }
 
 .estimate-button {
@@ -778,6 +778,59 @@
 }
 
 /*-- -------------------------- -->
+<---         OUR MISSION        -->
+<--- -------------------------- -*/
+
+#our-mission {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url("/images/mission-short.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#our-mission:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+}
+
+.mission-container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.mission-container h2 span {
+    display: block;
+    color: var(--primary);
+}
+
+.mission-container p {
+    margin-bottom: 50px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.mission-button {
+    display: block;
+    margin: auto;
+    margin-left: 0;
+    position: relative;
+    z-index: 10;
+    color: #000;
+}
+
+/*-- -------------------------- -->
 <---            TEAM            -->
 <--- -------------------------- -*/
 
@@ -904,7 +957,7 @@
 }
 
 .contact-group h2 {
-    color: #fff;
+    color: #4c4c4c;
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -1160,6 +1213,23 @@
         width: 290px;
         margin: auto;
         margin-bottom: 130px;
+    }
+
+    /*-- -------------------------- -->
+    <---         OUR MISSION        -->
+    <--- -------------------------- -*/
+
+    .mission-container h2 {
+        text-align: center;
+    }
+
+    .mission-container p {
+        text-align: center;
+    }
+
+    .mission-button {
+        display: block;
+        margin: auto;
     }
 
     /*-- -------------------------- -->
@@ -1697,6 +1767,29 @@
            -ms-flex-pack: center;
                justify-content: center;
        margin-bottom: 20px;
+    }
+
+    /*-- -------------------------- -->
+    <---         OUR MISSION        -->
+    <--- -------------------------- -*/
+
+    #our-mission {
+        background: url("/images/mission.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .mission-container h2 {
+        width: 500px;
+        font-size: 40px;
+    }
+
+    .mission-container p {
+        width: 500px;
     }
 
     /*-- -------------------------- -->
