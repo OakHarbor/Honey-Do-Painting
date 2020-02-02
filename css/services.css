@@ -9,9 +9,21 @@
 #hero {
     min-height: 400px;
     height: 400px;
-    background: url('/images/pergola.jpg');
+    background: url('/images/tools-compressor.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+#dark {
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    opacity: .7;
 }
 
 #home-h {

@@ -7,21 +7,21 @@
 #hero {
     min-height: 400px;
     height: 400px;
-    background: url('/images/repair.jpg');
+    background: url('/images/image-6.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-#hero:before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
+#dark {
     background: #000;
-    opacity: .2;
+    position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    opacity: .7;
 }
 
 #home-h {
