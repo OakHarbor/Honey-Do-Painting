@@ -106,6 +106,10 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .hamburger {
     padding: 0;
     display: inline-block;
@@ -872,10 +876,12 @@ footer {
 
 .footer-item a {
     color: #f5f3f3;
+    text-decoration: none;
 }
 
 .footer-item a:hover {
     color: var(--primary);
+    cursor: pointer;
 }
 
 .item-content i {
@@ -913,6 +919,11 @@ footer p {
 	color: var(--primary);
 	font-size: 1.5em;
 	margin-right: 10px;
+}
+
+.footer-donate {
+    margin-top: 40px;
+    width: 200px;
 }
 
 .branding {
@@ -967,7 +978,10 @@ footer p {
 	}
 
 	.item-4 {
-		width: 200px;
+        width: 200px;
+        -webkit-transform: translateY(-23px);
+            -ms-transform: translateY(-23px);
+                transform: translateY(-23px);
 	}
 
 	.item-2 p, .item-3 p {
