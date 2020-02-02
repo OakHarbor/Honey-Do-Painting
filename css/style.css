@@ -858,6 +858,36 @@
     color: #000;
 }
 
+.join {
+    margin-bottom: 10px !important;
+}
+
+form {
+    position: relative;
+    z-index: 200;
+}
+
+#subscribe input[type="email"] {
+    position: relative;
+    z-index: 500;
+    height: 50px;
+    width: 100%;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+#subscribe input:focus {
+    border: 2px solid var(--primary);
+}
+
+#subscribe button[type="submit"] {
+    width: 100%;
+}
+
+#subscribe button[type="submit"]:hover {
+    opacity: .7;
+}
+
 /*-- -------------------------- -->
 <---            TEAM            -->
 <--- -------------------------- -*/
@@ -1261,6 +1291,22 @@
 
     .mission-button {
         display: block;
+        margin: auto;
+    }
+
+    #subscribe input[type="email"] {
+        width: 400px;
+    }
+
+    button[type="submit"] {
+        margin: 0;
+    }
+
+    #subscribe {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 570px;
         margin: auto;
     }
 
@@ -1831,6 +1877,7 @@
     .mission-container p {
         width: 500px;
     }
+
 
     /*-- -------------------------- -->
     <---       MEET THE TEAM        -->
