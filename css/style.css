@@ -1309,7 +1309,8 @@ form {
         width: 570px;
         margin: auto;
     }
-
+    
+    
     /*-- -------------------------- -->
     <---        MEET THE TEAM       -->
     <--- -------------------------- -*/
@@ -1878,6 +1879,24 @@ form {
         width: 500px;
     }
 
+    #subscribe input[type="email"] {
+        width: 500px;
+    }
+
+    #subscribe button[type="submit"] {
+        width: 120px;
+        margin: 0 0 0 30px;
+    }
+
+    #subscribe {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 570px;
+        margin: auto;
+        margin-left: 0;
+        margin-top: 20px;
+    }
 
     /*-- -------------------------- -->
     <---       MEET THE TEAM        -->
