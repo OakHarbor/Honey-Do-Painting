@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
 
@@ -847,7 +849,7 @@
     color: #fff;
     position: relative;
     z-index: 10;
-}
+}  
 
 .mission-button {
     display: block;
@@ -1303,9 +1305,15 @@ form {
     }
 
     #subscribe {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         width: 570px;
         margin: auto;
     }
@@ -1889,9 +1897,16 @@ form {
     }
 
     #subscribe {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         width: 570px;
         margin: auto;
         margin-left: 0;
