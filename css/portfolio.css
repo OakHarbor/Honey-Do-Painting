@@ -15,7 +15,7 @@ html {
 
 #home-h {
     text-align: center;
-    font-size: 50px;
+    font-size: 3.125em;
     width: auto;
     margin: auto !important;
     position: relative;
@@ -84,7 +84,7 @@ html {
 .modal i {
     height: auto;
     color: #fff;
-    font-size: 30px;
+    font-size: 1.875em;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -169,7 +169,7 @@ html.clicked {
 
     #home-h {
         text-align: center;
-        font-size: 50px;
+        font-size: 3.125em;
         width: 100%;
     }
 

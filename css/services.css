@@ -17,7 +17,7 @@
 #home-h {
     width: 200px;
     text-align: center;
-    font-size: 55px;
+    font-size: 3.4375em;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -60,7 +60,7 @@
 }
 
 .topper h2 {
-    font-size: 30px;
+    font-size: 1.875em;
 }
 
 .topper span {
@@ -117,7 +117,7 @@
 .service-item h3 {
     text-align: center;
     margin-bottom: 15px;
-    font-size: 25px;
+    font-size: 1.5625em;
 }
 
 .service-item p {
@@ -153,7 +153,7 @@
 }
 
 .mission-container h2 {
-    font-size: 30px;
+    font-size: 1.875em;
     margin-bottom: 20px;
     color: #fff;
     position: relative;
@@ -352,7 +352,7 @@ form {
     }
 
     #home-h {
-        font-size: 70px;
+        font-size: 4.375em;
         padding-top: 0;
         -webkit-transform: translateY(-80px);
             -ms-transform: translateY(-80px);
@@ -379,7 +379,7 @@ form {
 
     .topper h2 {
         text-align: center;
-        font-size: 40px;
+        font-size: 2.5em;
     }
 
     .topper h2 span {
@@ -450,7 +450,7 @@ form {
 
     .mission-container h2 {
         width: 500px;
-        font-size: 40px;
+        font-size: 2.5em;
     }
 
     .mission-container p {
