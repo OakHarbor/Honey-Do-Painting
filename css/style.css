@@ -467,6 +467,10 @@
 <---           OFFER            -->
 <--- -------------------------- -*/
 
+.desktop-button {
+    display: none;
+}
+
 .offer {
     padding-top: 0;
     padding-bottom: 0px;
@@ -513,7 +517,7 @@
 }
 
 .right-card:last-child {
-    margin-bottom: 90px;
+    margin-bottom: 0px;
 }
 
 .right-card svg {
@@ -532,7 +536,7 @@
 
 #why-us img {
     position: absolute;
-    bottom: -170px;
+    bottom: -250px;
     left: -30px;
     width: 450px;
     opacity: .05;
@@ -540,6 +544,12 @@
     -webkit-transform: rotate(.5deg);
         -ms-transform: rotate(.5deg);
             transform: rotate(.5deg);
+}
+
+.mobile-button {
+    margin: auto;
+    margin-bottom: 150px;
+    display: block;
 }
 
 /* Iphone 5 */
@@ -590,8 +600,26 @@
     margin-bottom: 50px;
 }
 
+.faq-group h4 {
+    margin-bottom: 10px;
+}
+
+.faq-group li {
+    margin-bottom: 35px;
+}
+
+.faq-group a {
+    color: #b38212;
+}
+
+.faq-group a:hover {
+    cursor: pointer;
+}
+
 .faq-group h3 {
     margin-bottom: 20px;
+    border-left: 5px solid var(--primary);
+    padding-left: 15px;
 }
 
 .faq-button {
@@ -1109,7 +1137,7 @@
     #why-us img {
         display: block;
         position: absolute;
-        bottom: -40px;
+        bottom: -180px;
         width: 1200px;
         -webkit-transform: rotate(.5deg);
             -ms-transform: rotate(.5deg);
@@ -1168,6 +1196,10 @@
 
     .right-card:last-child {
         margin-bottom: 100px;
+    }
+
+    .why-us img {
+        bottom: 250px;
     }
 
     /*-- -------------------------- -->
@@ -1448,6 +1480,10 @@
         width: 700px;
     }
 
+    .desktop-button {
+        display: block;
+    }
+
     .box-item {
         border-bottom: none;
         margin-top: 12.5px;
@@ -1491,6 +1527,10 @@
         width: 300px;
         height: auto;
         margin: 0;
+    }
+
+    .mobile-button {
+        display: none;
     }
 
     .icon-group svg {
