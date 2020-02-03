@@ -958,6 +958,14 @@ form {
     color: #808080;
 }
 
+.desktop-button {
+    display: none;
+}
+
+.mobile-button {
+    display: block;
+}
+
 .team-button {
     display: block;
     margin: 50px auto 0 auto;
@@ -1926,6 +1934,7 @@ form {
 
     #meet-the-team {
         padding-top: 100px;
+        padding-bottom: 230px;
     }
 
     .team-container {
@@ -1945,9 +1954,40 @@ form {
         margin: 0;
     }
 
+    #meet-the-team h2, #meet-the-team h3 {
+        width: 500px;
+    }
+
+    .team-container {
+        margin: 0;
+        order: 0;
+    }
+
+    .headings {
+        order: 2;
+    }
+
+    .team-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 900px;
+        margin: auto;
+    }
+
     .team-button {
         margin-top: 90px;
         margin-bottom: 50px;
+    }
+
+    .meet-mobile {
+        display: none;
+    }
+
+    .meet-desktop {
+        display: block;
+        margin-left: 36px;
+        margin-top: 0;
     }
 
     .yellow-comb {
