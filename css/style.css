@@ -154,7 +154,7 @@
 
 .first-box p:nth-child(2) {
     color: var(--primary);
-    font-size: 1.5625em;
+    font-size: 1.2625em;
     font-weight: 900;
 }
 
@@ -958,11 +958,7 @@ form {
     color: #808080;
 }
 
-.desktop-button {
-    display: none;
-}
-
-.mobile-button {
+.meet-mobile {
     display: block;
 }
 
@@ -983,6 +979,10 @@ form {
 }
 
 .honeycomb-yellow-long {
+    display: none;
+}
+
+.meet-desktop {
     display: none;
 }
 

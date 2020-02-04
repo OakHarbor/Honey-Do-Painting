@@ -15,6 +15,7 @@ let toggleNav = function () {
     let getSidebarUL = document.querySelector(".side-nav ul");
     let getSidebarLinks = document.querySelectorAll(".side-nav a");
     let getSidebarVisibility = document.querySelector(".side-nav");
+    var $html = $("html");
 
     if (toggleNavStatus === false) {
 
@@ -26,7 +27,7 @@ let toggleNav = function () {
         item.style.visibility = "visible";
         });
       getSidebar.style.width = "60%";
-
+      $html.addClass("clicked");
       toggleNavStatus = true;
     } 
 
@@ -38,7 +39,7 @@ let toggleNav = function () {
           item.style.visibility = "hidden";
          });
         getSidebar.style.width = "0";
-
+        $html.removeClass("clicked");
         toggleNavStatus = false;
     }
 }
