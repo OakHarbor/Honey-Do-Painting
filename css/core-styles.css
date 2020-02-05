@@ -23,6 +23,7 @@ body, html {
 
 html.clicked {
     position: fixed;
+    width: 100%;
 }
 
 p {
