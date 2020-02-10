@@ -31,6 +31,10 @@ p {
 	line-height: 1.9em;
 }
 
+a {
+    text-decoration: none;
+}
+
 p, a, li {
 	font-family: 'Roboto', sans-serif;
 	color: #4c4c4c;

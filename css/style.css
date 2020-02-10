@@ -152,10 +152,11 @@
     text-transform: initial;
 }
 
-.first-box p:nth-child(2) {
+.first-box a {
     color: var(--primary);
     font-size: 1.2625em;
     font-weight: 900;
+    text-decoration: none;
 }
 
 /* Main Content */
@@ -811,6 +812,33 @@
 }
 
 /*-- -------------------------- -->
+<---          SPOTLIGHT         -->
+<--- -------------------------- -*/
+
+#spotlight {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#spotlight h2 {
+    font-size: 1.875em;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+#spotlight h2 span {
+    color: var(--primary);
+}
+
+#spotlight p {
+    margin-bottom: 30px;
+}
+
+.spotlight {
+    width: 100%;
+}
+
+/*-- -------------------------- -->
 <---         OUR MISSION        -->
 <--- -------------------------- -*/
 
@@ -934,6 +962,11 @@ form {
 
 .team-card img {
     width: 100%;
+}
+
+.team-group {
+    padding-left: 36px;
+    padding-right: 36px;
 }
 
 .team-content {
@@ -1339,9 +1372,31 @@ form {
         padding-bottom: 100px;
     }
 
+    .team-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 640px;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .team-card {
-        width: 300px;
+        width: 280px;
         margin-bottom: 0;
+        order: -1;
+        margin-right: 36px;
+    }
+
+    .team-card p:first-child {
+        font-size: 1.1em;
+    }
+
+    .headings {
+        width: 400px;
+        margin: 0;
+        order: 2;
     }
 
     .team-container {
@@ -1880,6 +1935,25 @@ form {
     }
 
     /*-- -------------------------- -->
+    <---          SPOTLIGHT         -->
+    <--- -------------------------- -*/
+
+    #spotlight {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .spotlight {
+        width: 450px;
+    }
+
+    .spotlight-content {
+        width: 500px;
+        margin-left: 36px;
+    }
+
+    /*-- -------------------------- -->
     <---         OUR MISSION        -->
     <--- -------------------------- -*/
 
@@ -1952,6 +2026,7 @@ form {
     .team-card {
         width: 350px;
         margin: 0;
+        margin-right: 36px;
     }
 
     #meet-the-team h2, #meet-the-team h3 {
@@ -1968,6 +2043,7 @@ form {
     }
 
     .headings {
+        width: 600px;
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
                 order: 2;
@@ -1984,13 +2060,14 @@ form {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        width: 900px;
+        width: 1100px;
         margin: auto;
     }
 
     .team-button {
         margin-top: 90px;
         margin-bottom: 50px;
+        margin-left: 0;
     }
 
     .meet-mobile {
@@ -1999,8 +2076,7 @@ form {
 
     .meet-desktop {
         display: block;
-        margin-left: 36px;
-        margin-top: 0;
+        margin-top: 30px;
     }
 
     .yellow-comb {
