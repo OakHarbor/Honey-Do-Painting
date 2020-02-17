@@ -270,18 +270,21 @@ form p{
 
     #hero {
         position: relative;
-        height: 400px;
+        height: 600px;
     }
 
     #home-h {
         font-size: 4.375em;
+        -webkit-transform: translateY(-70px);
+            -ms-transform: translateY(-70px);
+                transform: translateY(-70px);
     }
 
     #hero img {
         display: block;
         position: absolute;
         width: 100%;
-        bottom: 0;
+        bottom: -3px;
         z-index: 40;
     }
 
