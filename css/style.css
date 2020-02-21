@@ -546,8 +546,8 @@
 
 .mobile-button {
     margin: auto;
-    margin-bottom: 150px;
-    display: block;
+    margin-bottom: 50px;
+    display: inline-block;
 }
 
 /* Iphone 5 */
