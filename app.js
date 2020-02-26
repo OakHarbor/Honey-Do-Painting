@@ -228,3 +228,104 @@ $homeIcon.on("click", function(e) {
   $modalTwentyOne.removeClass("clicked");
   $html.removeClass("clicked");
 });
+
+
+/* Dark Mode Variables */
+
+/* Navigation Bar and Body */
+var $darkToggle = $(".dark-toggle");
+var $navbarMenu = $(".navbar-menu");
+var $sideNavA = $(".side-nav a");
+var $activeMenu = $(".active-menu");
+var $isActiveHamburger = $(".hamburger.is-active .hamburger-inner::after");
+var $DTspan = $(".DTspan");
+var $body = $("body");
+var $mobileWrapper = $(".mobile-wrapper");
+var $hamburgerInner = $(".hamburger-inner");
+var $mobileLogo = $("#mobile-logo");
+var $darkModeLogo = $(".dark-mode-logo");
+
+/* Body Selections */
+var $bodyP = $("body p");
+var $bodyH2 = $("body h2");
+var $bodyH3 = $("body h3");
+
+/* Landing */
+var $landingDark = $("#dark");
+var $floatingBox = $(".floating-box");
+
+/* Trust Us */
+var $estimate = $(".estimate");
+var $contentBack = $(".content-back");
+
+/* Offer */
+var $darkSVG = $(".dark-svg");
+var $lightSVG = $(".light-svg");
+
+/* Why Us */
+var $whyUs = $("#why-us");
+
+/* FAQ */
+var $faq = $("#frequently-asked-questions");
+var $faqH4 = $(".faq-group h4");
+var $faqA = $(".faq-group a");
+var $faqUL = $("ul li");
+
+/* Spotlight */
+var $spotlight = $("#spotlight");
+
+/* Meet The Team */
+var $meetTheTeam = $("#meet-the-team");
+var $teamContent = $(".team-content");
+var $teamContentP = $(".team-content p");
+
+$darkToggle.on("click", function(e) {
+
+  /* Navigation */
+  $darkToggle.toggleClass("dark-mode");
+  $DTspan.toggleClass("dark-mode");
+  $body.toggleClass("dark-mode");
+  $navbarMenu.toggleClass("dark-mode");
+  $sideNavA.toggleClass("dark-mode");
+  $activeMenu.toggleClass("dark-mode");
+  $isActiveHamburger.toggleClass("dark-mode");
+  $mobileWrapper.toggleClass("dark-mode");
+  $hamburgerInner.toggleClass("dark-mode");
+  $mobileLogo.toggleClass("dark-mode");
+  $darkModeLogo.toggleClass("dark-mode");
+
+  /* Body Styles */
+  $bodyP.toggleClass("dark-mode");
+  $bodyH2.toggleClass("dark-mode");
+  $bodyH3.toggleClass("dark-mode");
+
+  /* Landing */
+  $landingDark.toggleClass("dark-mode");
+  $floatingBox.toggleClass("dark-mode");
+
+  /* Estimate/Trust Us */
+  $estimate.toggleClass("dark-mode");
+  $contentBack.toggleClass("dark-mode");
+
+  /* Offer */
+  $darkSVG.toggleClass("dark-mode");
+  $lightSVG.toggleClass("dark-mode");
+
+  /* Why Us */
+  $whyUs.toggleClass("dark-mode");
+
+  /* FAQ */
+  $faq.toggleClass("dark-mode");
+  $faqH4.toggleClass("dark-mode");
+  $faqA.toggleClass("dark-mode");
+  $faqUL.toggleClass("dark-mode");
+
+  /* Spotlight */
+  $spotlight.toggleClass("dark-mode");
+
+  /* Meet The Team */
+  $meetTheTeam.toggleClass("dark-mode");
+  $teamContent.toggleClass("dark-mode");
+  $teamContentP.toggleClass("dark-mode");
+
+});
