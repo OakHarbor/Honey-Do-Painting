@@ -87,6 +87,7 @@ html {
 } 
 
 .modal img {
+    height: auto;
     width: 100%;
     position: absolute;
     top: 50%;
@@ -97,7 +98,8 @@ html {
 }
 
 .modal i {
-    height: auto;
+    width: 30px;
+    height: 30px;
     color: #fff;
     font-size: 1.875em;
     position: absolute;
