@@ -149,7 +149,7 @@ a.active-menu.dark-mode {
 }
 
 .dark-toggle.dark-mode {
-    border-color: var(--light);
+    border-color: var(--dark);
     background: var(--primary);
     transition: .3s ease;
 }
