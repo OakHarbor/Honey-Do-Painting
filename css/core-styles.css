@@ -268,6 +268,13 @@ button:hover {
 	display: none;
 }
 
+.main-skip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
 .nav-comb {
     display: block !important;
     position: absolute;
@@ -1028,3 +1035,4 @@ footer p {
 		margin-top: 50px;
 	}
 }
+
