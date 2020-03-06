@@ -149,7 +149,7 @@ a.active-menu.dark-mode {
 }
 
 .dark-toggle.dark-mode {
-    border-color: var(--dark);
+    border-color: var(--medium);
     background: var(--primary);
     transition: .3s ease;
 }
@@ -214,11 +214,11 @@ a.active-menu.dark-mode {
 
 .dark-svg {
     position: absolute;
-    display: none;
+    display: none !important;
 }
 
 .dark-svg.dark-mode {
-    display: block;
+    display: block !important;
 }
 
 .light-svg.dark-mode {
@@ -267,7 +267,7 @@ ul li.dark-mode {
 <--- -------------------------- -*/
 
 #meet-the-team.dark-mode {
-    background: var(--medium);
+    background: var(--medium) !important;
 }
 
 .team-content.dark-mode {
@@ -276,6 +276,33 @@ ul li.dark-mode {
 
 .team-content p.dark-mode {
     color: #fff !important;
+}
+
+/*-- -------------------------- -->
+<---          CONTACT           -->
+<--- -------------------------- -*/
+
+.top h2.dark-mode {
+    color: var(--medium);
+}
+
+.top p.dark-mode {
+    color: var(--medium);
+}
+
+/*-- -------------------------- -->
+<---           FOOTER           -->
+<--- -------------------------- -*/
+
+footer.dark-mode {
+    background: var(--dark);
+}
+
+/* Tablets */
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+
+    
+
 }
 
 /* Desktop */

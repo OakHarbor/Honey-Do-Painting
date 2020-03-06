@@ -281,10 +281,32 @@ var $faqUL = $("ul li");
 /* Spotlight */
 var $spotlight = $("#spotlight");
 
+/* Contact */
+var $topH2 = $(".top h2");
+var $topP = $(".top p");
+
 /* Meet The Team */
 var $meetTheTeam = $("#meet-the-team");
 var $teamContent = $(".team-content");
 var $teamContentP = $(".team-content p");
+
+/* Footer */
+var $footer = $("footer");
+
+// -------------------------------------------
+//             ABOUT PAGE
+//--------------------------------------------
+
+var $numberItemH4 = $('.number-item h4');
+var $squareH2 = $('.square h2');
+
+// -------------------------------------------
+//             CONTACT PAGE
+//--------------------------------------------
+
+var $contactTopper = $('.contact-topper');
+var $contactRightH4 = $('.contact-right h4');
+var $contactRightA = $('.contact-right a');
 
 // Dark Mode Action
 let darkMode = localStorage.getItem("darkMode");
@@ -344,6 +366,24 @@ const enableDarkMode = () => {
   $teamContent.addClass("dark-mode");
   $teamContentP.addClass("dark-mode");
 
+  /* Footer */
+  $footer.addClass("dark-mode");
+
+  // -------------------------------------------
+  //             ABOUT PAGE
+  //--------------------------------------------
+
+  $numberItemH4.addClass("dark-mode");
+  $squareH2.addClass("dark-mode");
+
+  // -------------------------------------------
+  //             CONTACT PAGE
+  //--------------------------------------------
+
+  $contactTopper.addClass("dark-mode");
+  $contactRightH4.addClass("dark-mode");
+  $contactRightA.addClass("dark-mode");
+
   localStorage.setItem("darkMode", "enabled")
 }
 
@@ -396,10 +436,32 @@ const disableDarkMode = () => {
   /* Spotlight */
   $spotlight.removeClass("dark-mode");
 
+  /* Contact */
+  $topH2.removeClass("dark-mode");
+  $topP.removeClass("dark-mode");
+
   /* Meet The Team */
   $meetTheTeam.removeClass("dark-mode");
   $teamContent.removeClass("dark-mode");
   $teamContentP.removeClass("dark-mode");
+
+  /* Footer */
+  $footer.removeClass("dark-mode");
+
+// -------------------------------------------
+//             ABOUT PAGE
+//--------------------------------------------
+
+$numberItemH4.removeClass("dark-mode");
+$squareH2.removeClass("dark-mode");
+
+// -------------------------------------------
+//             CONTACT PAGE
+//--------------------------------------------
+
+$contactTopper.removeClass("dark-mode");
+$contactRightH4.removeClass("dark-mode");
+$contactRightA.removeClass("dark-mode");
 
   localStorage.setItem("darkMode", null)
 }

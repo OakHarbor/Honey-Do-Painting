@@ -4,6 +4,22 @@
 <---           LANDING          -->
 <--- -------------------------- -*/
 
+body.dark-mode {
+    background: #000 !important;
+}
+
+.contact-topper.dark-mode {
+    color: #fff !important;
+}
+
+.contact-right h4.dark-mode {
+    color: #fff;
+}
+
+.contact-right a.dark-mode {
+    color: #fff;
+}
+
 #hero {
     min-height: 400px;
     height: 400px;
@@ -53,6 +69,24 @@
 
 #hero img {
     display: none;
+}
+
+.white-comb {
+    position: absolute;
+    width: 100%;
+    bottom: -2px;
+    z-index: 100;
+}
+
+.white-comb.dark-mode {
+    display: none !important;
+}
+
+.dark-comb.dark-mode {
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    z-index: 100;
 }
 
 /*-- -------------------------- -->

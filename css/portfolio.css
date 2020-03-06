@@ -4,13 +4,21 @@
 <---          LANDING           -->
 <--- -------------------------- -*/
 
+body.dark-mode {
+    background: #000 !important;
+}
+
+.dark-comb.dark-mode {
+    z-index: 1000 !important;
+}
+
 html {
     overflow-y: scroll;
 }
 
 #hero {
     min-height: 40px;
-    height: 400px;
+    height: 450px;
     background: url("/images/image-12.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,6 +47,7 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 60px !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -54,6 +63,24 @@ html {
     height: 200px;
     border: 10px solid rgba(255,186,25, .4);
     z-index: -1;
+}
+
+.white-comb {
+    position: absolute;
+    width: 100%;
+    bottom: -2px;
+    z-index: 100;
+}
+
+.white-comb.dark-mode {
+    display: none !important;
+}
+
+.dark-comb.dark-mode {
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    z-index: 100;
 }
 
 /*-- -------------------------- -->
@@ -184,10 +211,15 @@ html.clicked {
 /* Tablets */
 @media screen and (min-width: 500px) and (max-width: 1024px) {
 
+    #hero {
+        height: 600px;
+    }
+
     #home-h {
         text-align: center;
         font-size: 3.125em;
         width: 100%;
+        margin-bottom: 130px !important;
     }
 
     /*-- -------------------------- -->
@@ -227,10 +259,17 @@ html.clicked {
 /* Desktop */
 @media screen and (min-width: 1025px) {
 
+    #hero {
+        height: 1100px;
+        background-attachment: fixed;
+        position: relative;
+    }
+
     #home-h {
-        -webkit-transform: translateY(50px);
-        -ms-transform: translateY(50px);
-            transform: translateY(50px);
+        -webkit-transform: translateY(-90px);
+            -ms-transform: translateY(-90px);
+                transform: translateY(-90px);
+        font-size: 4.375em;
     }
 
     #hero {
@@ -240,10 +279,6 @@ html.clicked {
     /*-- -------------------------- -->
     <---          GALLERY           -->
     <--- -------------------------- -*/
-
-    #hero {
-        height: 600px;
-    }
 
     .gallery {
         display: -webkit-box;

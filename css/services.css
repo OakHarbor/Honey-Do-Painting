@@ -6,6 +6,22 @@
 <---           LANDING          -->
 <--- -------------------------- -*/
 
+body.dark-mode {
+    background: #000 !important;
+}
+
+.dark-comb.dark-mode {
+    z-index: 1000 !important;
+}
+
+.dark-svg.dark-mode {
+    margin: auto !important;
+    float: unset;
+    top: 35px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #hero {
     min-height: 400px;
     height: 400px;
@@ -56,6 +72,24 @@
 
 #hero img {
     display: none;
+}
+
+.white-comb {
+    position: absolute;
+    width: 100%;
+    bottom: -2px;
+    z-index: 100;
+}
+
+.white-comb.dark-mode {
+    display: none !important;
+}
+
+.dark-comb.dark-mode {
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    z-index: 100;
 }
 
 /*-- -------------------------- -->
@@ -112,6 +146,7 @@
 
 .service-item {
     margin-bottom: 50px;
+    position: relative;
 }
 
 .service-item:last-child {
@@ -358,17 +393,16 @@ form {
     <--- -------------------------- -*/
 
     #hero {
-        height: 1000px;
+        height: 1100px;
         background-attachment: fixed;
         position: relative;
     }
 
     #home-h {
+        -webkit-transform: translateY(-120px);
+            -ms-transform: translateY(-120px);
+                transform: translateY(-120px);
         font-size: 4.375em;
-        padding-top: 0;
-        -webkit-transform: translateY(-80px);
-            -ms-transform: translateY(-80px);
-                transform: translateY(-80px);
     }
 
     #hero img {

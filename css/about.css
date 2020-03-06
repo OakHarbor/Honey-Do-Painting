@@ -4,6 +4,25 @@
 <---           LANDING          -->
 <--- -------------------------- -*/
 
+/* DARK MODE */
+.number-item h4.dark-mode {
+    color: var(--primary);
+}
+
+.square h2.dark-mode {
+    color: var(--primary) !important;
+}
+
+body.dark-mode {
+    background: var(--dark) !important;
+}
+
+.dark-comb.dark-mode {
+    z-index: 1000 !important;
+}
+
+/* END DARK MODE */
+
 #hero {
     min-height: 400px;
     height: 400px;
@@ -40,6 +59,7 @@
             align-items: center;
     z-index: 100;
     height: 300px;
+    margin-bottom: 300px;
 }
 
 #home-h:before {
@@ -51,8 +71,22 @@
     z-index: -1;
 }
 
-#hero img {
-    display: none;
+.white-comb {
+    position: absolute;
+    width: 100%;
+    bottom: -2px;
+    z-index: 100;
+}
+
+.white-comb.dark-mode {
+    display: none !important;
+}
+
+.dark-comb.dark-mode {
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    z-index: 100;
 }
 
 /*-- -------------------------- -->
@@ -515,6 +549,7 @@
             -ms-transform: translateY(-70px);
                 transform: translateY(-70px);
         font-size: 4.375em;
+        margin-bottom: 0;
     }
 
     #hero img {
@@ -523,6 +558,11 @@
         width: 100%;
         bottom: 0;
         z-index: 40;
+    }
+
+    .white-comb {
+        position: absolute;
+        bottom: -2px !important;
     }
 
     /*-- -------------------------- -->
@@ -767,15 +807,15 @@
     <--- -------------------------- -*/
 
     #hero {
-        height: 1000px;
+        height: 1100px;
         background-attachment: fixed;
         position: relative;
     }
 
     #home-h {
-        -webkit-transform: translateY(-80px);
-            -ms-transform: translateY(-80px);
-                transform: translateY(-80px);
+        -webkit-transform: translateY(30px);
+            -ms-transform: translateY(30px);
+                transform: translateY(30px);
         font-size: 4.375em;
     }
 

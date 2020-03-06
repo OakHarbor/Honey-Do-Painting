@@ -108,11 +108,16 @@
 <body class="">
 
     <header>
+        <button id="dark-mode" aria-label="dark mode toggle">
+            <div aria-hidden="true" class="dark-toggle">
+                <span class="DTspan"></span>
+            </div>
+        </button>
         <!-- Desktop Navbar -->
         <div class="mobile-wrapper">
             <div class="mobile-nav container mobile-nav-container">
-                <img id="mobile-logo" class="" src="images/company-logo-desktop.png" alt="mobile_company_logo" height="55"> 
-                <img class="dark-mode-logo" src="/images/logo-dark.png" alt="" height="55">
+                <img aria-hidden="true" id="mobile-logo" class="" src="images/company-logo-desktop.png" alt="mobile_company_logo" height="55"> 
+                <img aria-hidden="true" class="dark-mode-logo" src="/images/logo-dark.png" alt="" height="55">
 
                 <!-- Hamburger Menu -->
                 <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
