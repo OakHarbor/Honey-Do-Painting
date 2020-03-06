@@ -79,6 +79,10 @@
     display: none;
 }
 
+.dark-comb {
+    display: none;
+}
+
 .quote-button {
     color: #000;
 }
@@ -1690,9 +1694,13 @@ form {
         display: block;
         position: absolute;
         width: 100%;
-        bottom: 0;
+        bottom: -2px;
         height: auto;
         z-index: 50;
+    }
+
+    .dark-comb {
+        bottom: -2px;
     }
 
     /*-- -------------------------- -->

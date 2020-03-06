@@ -229,11 +229,12 @@ $homeIcon.on("click", function(e) {
   $html.removeClass("clicked");
 });
 
-
-/* Dark Mode Variables */
+// ------------------------------------------------- DARK MODE -----------------------------
+ 
+// Home Page
 
 /* Navigation Bar and Body */
-var $darkToggle = $(".dark-toggle");
+var $darkToggle = $('.dark-toggle')
 var $navbarMenu = $(".navbar-menu");
 var $sideNavA = $(".side-nav a");
 var $activeMenu = $(".active-menu");
@@ -245,6 +246,7 @@ var $hamburgerInner = $(".hamburger-inner");
 var $mobileLogo = $("#mobile-logo");
 var $darkModeLogo = $(".dark-mode-logo");
 
+
 /* Body Selections */
 var $bodyP = $("body p");
 var $bodyH2 = $("body h2");
@@ -253,6 +255,11 @@ var $bodyH3 = $("body h3");
 /* Landing */
 var $landingDark = $("#dark");
 var $floatingBox = $(".floating-box");
+var $whiteComb = $(".white-comb");
+var $darkComb = $(".dark-comb");
+
+/* Customer Service */
+var $customerService = $("#customer-service");
 
 /* Trust Us */
 var $estimate = $(".estimate");
@@ -279,53 +286,134 @@ var $meetTheTeam = $("#meet-the-team");
 var $teamContent = $(".team-content");
 var $teamContentP = $(".team-content p");
 
-$darkToggle.on("click", function(e) {
+// Dark Mode Action
+let darkMode = localStorage.getItem("darkMode");
+const darkModeToggle = document.querySelector('#dark-mode');
+
+const enableDarkMode = () => {
 
   /* Navigation */
-  $darkToggle.toggleClass("dark-mode");
-  $DTspan.toggleClass("dark-mode");
-  $body.toggleClass("dark-mode");
-  $navbarMenu.toggleClass("dark-mode");
-  $sideNavA.toggleClass("dark-mode");
-  $activeMenu.toggleClass("dark-mode");
-  $isActiveHamburger.toggleClass("dark-mode");
-  $mobileWrapper.toggleClass("dark-mode");
-  $hamburgerInner.toggleClass("dark-mode");
-  $mobileLogo.toggleClass("dark-mode");
-  $darkModeLogo.toggleClass("dark-mode");
+  $darkToggle.addClass("dark-mode");
+  $DTspan.addClass("dark-mode");
+  $body.addClass("dark-mode");
+  $navbarMenu.addClass("dark-mode");
+  $sideNavA.addClass("dark-mode");
+  $activeMenu.addClass("dark-mode");
+  $isActiveHamburger.addClass("dark-mode");
+  $mobileWrapper.addClass("dark-mode");
+  $hamburgerInner.addClass("dark-mode");
+  $mobileLogo.addClass("dark-mode");
+  $darkModeLogo.addClass("dark-mode");
 
   /* Body Styles */
-  $bodyP.toggleClass("dark-mode");
-  $bodyH2.toggleClass("dark-mode");
-  $bodyH3.toggleClass("dark-mode");
+  $bodyP.addClass("dark-mode");
+  $bodyH2.addClass("dark-mode");
+  $bodyH3.addClass("dark-mode");
 
   /* Landing */
-  $landingDark.toggleClass("dark-mode");
-  $floatingBox.toggleClass("dark-mode");
+  $landingDark.addClass("dark-mode");
+  $floatingBox.addClass("dark-mode");
+  $whiteComb.addClass("dark-mode");
+  $darkComb.addClass("dark-mode");
+
+  /* Service */
+  $customerService.addClass("dark-mode");
 
   /* Estimate/Trust Us */
-  $estimate.toggleClass("dark-mode");
-  $contentBack.toggleClass("dark-mode");
+  $estimate.addClass("dark-mode");
+  $contentBack.addClass("dark-mode");
 
   /* Offer */
-  $darkSVG.toggleClass("dark-mode");
-  $lightSVG.toggleClass("dark-mode");
+  $darkSVG.addClass("dark-mode");
+  $lightSVG.addClass("dark-mode");
 
   /* Why Us */
-  $whyUs.toggleClass("dark-mode");
+  $whyUs.addClass("dark-mode");
 
   /* FAQ */
-  $faq.toggleClass("dark-mode");
-  $faqH4.toggleClass("dark-mode");
-  $faqA.toggleClass("dark-mode");
-  $faqUL.toggleClass("dark-mode");
+  $faq.addClass("dark-mode");
+  $faqH4.addClass("dark-mode");
+  $faqA.addClass("dark-mode");
+  $faqUL.addClass("dark-mode");
 
   /* Spotlight */
-  $spotlight.toggleClass("dark-mode");
+  $spotlight.addClass("dark-mode");
 
   /* Meet The Team */
-  $meetTheTeam.toggleClass("dark-mode");
-  $teamContent.toggleClass("dark-mode");
-  $teamContentP.toggleClass("dark-mode");
+  $meetTheTeam.addClass("dark-mode");
+  $teamContent.addClass("dark-mode");
+  $teamContentP.addClass("dark-mode");
 
-});
+  localStorage.setItem("darkMode", "enabled")
+}
+
+const disableDarkMode = () => {
+
+  /* Navigation */
+  $darkToggle.removeClass("dark-mode");
+  $DTspan.removeClass("dark-mode");
+  $body.removeClass("dark-mode");
+  $navbarMenu.removeClass("dark-mode");
+  $sideNavA.removeClass("dark-mode");
+  $activeMenu.removeClass("dark-mode");
+  $isActiveHamburger.removeClass("dark-mode");
+  $mobileWrapper.removeClass("dark-mode");
+  $hamburgerInner.removeClass("dark-mode");
+  $mobileLogo.removeClass("dark-mode");
+  $darkModeLogo.removeClass("dark-mode");
+
+  /* Body Styles */
+  $bodyP.removeClass("dark-mode");
+  $bodyH2.removeClass("dark-mode");
+  $bodyH3.removeClass("dark-mode");
+
+  /* Landing */
+  $landingDark.removeClass("dark-mode");
+  $floatingBox.removeClass("dark-mode");
+  $whiteComb.removeClass("dark-mode");
+  $darkComb.removeClass("dark-mode");
+
+  /* Service */
+  $customerService.removeClass("dark-mode");
+
+  /* Estimate/Trust Us */
+  $estimate.removeClass("dark-mode");
+  $contentBack.removeClass("dark-mode");
+
+  /* Offer */
+  $darkSVG.removeClass("dark-mode");
+  $lightSVG.removeClass("dark-mode");
+
+  /* Why Us */
+  $whyUs.removeClass("dark-mode");
+
+  /* FAQ */
+  $faq.removeClass("dark-mode");
+  $faqH4.removeClass("dark-mode");
+  $faqA.removeClass("dark-mode");
+  $faqUL.removeClass("dark-mode");
+
+  /* Spotlight */
+  $spotlight.removeClass("dark-mode");
+
+  /* Meet The Team */
+  $meetTheTeam.removeClass("dark-mode");
+  $teamContent.removeClass("dark-mode");
+  $teamContentP.removeClass("dark-mode");
+
+  localStorage.setItem("darkMode", null)
+}
+
+if (darkMode == "enabled") {
+  enableDarkMode();
+}
+
+darkModeToggle.addEventListener('click', () => {
+  darkMode = localStorage.getItem("darkMode");
+  if (darkMode !== "enabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+})
+

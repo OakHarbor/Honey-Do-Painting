@@ -71,21 +71,12 @@ a.active-menu.dark-mode {
     border: none;
     width: 45px;
     height: 25px;
-    top: 33px;
+    top: 42px;
     left: 36px;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.dark-toggle:after {
-    content: 'Dark';
-    color: #2e2e2e;
-    position: absolute;
-    bottom: -25px;
-    font-size: .8em;
-    display: none;
 }
 
 .dark-toggle {
@@ -102,6 +93,45 @@ a.active-menu.dark-mode {
     display: flex;
     justify-content: center;
     z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dark-toggle:after {
+    content: url('/moon.svg');
+    color: #2e2e2e;
+    position: absolute;
+    height: auto;
+    top: -26px;
+    transition: .3s ease;
+    opacity: 1;
+}
+
+.dark-toggle.dark-mode:after {
+    top: -70px;
+    visibility: hidden;
+    transition: .3s ease;
+    opacity: 0;
+}
+
+.dark-toggle:before {
+    content: url('/sun.svg');
+    position: absolute;
+    top: 10px;
+    visibility: hidden;
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+.dark-toggle.dark-mode:before {
+    top: -27px;
+    height: 20px;
+    width: 20px;
+    visibility: visible;
+    transition: .3s ease;
+    z-index: 2000;
+    opacity: 1;
 }
 
 .dark-toggle:hover {
@@ -246,4 +276,49 @@ ul li.dark-mode {
 
 .team-content p.dark-mode {
     color: #fff !important;
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+
+    .dark-toggle {
+        border-color: #fff;
+    }
+
+    .dark-toggle:after {
+        content: url('/moon-white.svg');
+        color: #2e2e2e;
+        position: absolute;
+        height: auto;
+        top: -26px;
+        transition: .5s ease;
+    }
+
+    .dark-toggle span {
+        background: #fff;
+    }
+
+    #dark-mode {
+        left: unset;
+        right: 100px;
+        top: 150px;
+        display: block;
+        z-index: 1000;
+    }
+
+    .navbar-menu.dark-mode {
+        background: unset;
+    }
+
+    .white-comb.dark-mode {
+        display: none;
+    }
+
+    .dark-comb.dark-mode {
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        z-index: 5;
+    }
+
 }
