@@ -188,7 +188,7 @@ a.active-menu.dark-mode {
 }
 
 .dark-toggle.dark-mode {
-    border-color: var(--medium);
+    border-color: transparent;
     background: var(--primary);
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
