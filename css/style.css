@@ -5,7 +5,7 @@
 #hero {
     height: 650px;
     width: 100%;
-    background:url("../images/home.jpg");
+    background:url("../images/home-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -296,7 +296,7 @@
 <--- -------------------------- -*/
 
 .content {
-    background:url("../images/paintbrush.jpg");
+    background:url("../images/paintbrush-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 50px;
@@ -637,7 +637,7 @@
 <--- -------------------------- -*/
 
 #corinthians-passage {
-    background: url("/images/corinthians.jpg");
+    background: url("/images/corinthians-mobile.jpg");
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
@@ -684,7 +684,7 @@
 <--- -------------------------- -*/
 
 #trust-us {
-    background:url("../images/northwest.jpg");
+    background:url("../images/northwest-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -927,7 +927,7 @@
 #our-mission {
     padding-top: 50px;
     padding-bottom: 50px;
-    background: url("/images/mission-short.jpg");
+    background: url("/images/mission-short-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -1110,7 +1110,7 @@ form {
 <--- -------------------------- -*/
 
 #contact-strip {
-    background:url("../images/northwest.jpg");
+    background:url("../images/northwest-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 36px;
@@ -1891,6 +1891,10 @@ form {
     <---          TRUST US          -->
     <--- -------------------------- -*/
 
+    #trust-us {
+        background: url("/images/paintbrush.jpg");
+    }
+
     .content {
         padding-bottom: 200px;
         background-attachment: fixed;
@@ -2026,6 +2030,10 @@ form {
     #corinthians-passage {
         padding-top: 150px;
         padding-bottom: 150px;
+        background: url("/images/corinthians.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     .corinthians {
@@ -2037,7 +2045,10 @@ form {
     <--- -------------------------- -*/
 
     #trust-us {
+        background: url("/images/paintbrush.jpg");
         background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .review-group {
@@ -2118,7 +2129,10 @@ form {
     }
 
     .gallery-topper {
+        background: url("/images/kitchen.jpg");
         background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .gallery-group img {
