@@ -529,7 +529,7 @@
     height: auto;
     float: left;
     margin-right: 20px;
-    margin-bottom: 140px;
+    margin-bottom: 150px;
 }
 
 .right-card h3 {
@@ -917,7 +917,7 @@
 }
 
 .spotlight {
-    width: 100%;
+    width: 100%;;
 }
 
 /*-- -------------------------- -->
@@ -1091,7 +1091,8 @@ form {
     position: absolute;
     bottom: -100px;
     left: -20px;
-    width: 420px;
+    width: 120%;
+    height: auto;
     -webkit-transform: rotate(1deg);
         -ms-transform: rotate(1deg);
             transform: rotate(1deg);
@@ -1238,6 +1239,7 @@ form {
         position: absolute;
         bottom: -40px;
         width: 1200px;
+        height: 100px;
         -webkit-transform: rotate(.5deg);
             -ms-transform: rotate(.5deg);
                 transform: rotate(.5deg);
@@ -1299,8 +1301,9 @@ form {
     #why-us img {
         display: block;
         position: absolute;
-        bottom: -180px;
+        bottom: -100px;
         width: 1200px;
+        height: 100px;
         -webkit-transform: rotate(.5deg);
             -ms-transform: rotate(.5deg);
                 transform: rotate(.5deg);
@@ -1475,6 +1478,10 @@ form {
     <---         OUR MISSION        -->
     <--- -------------------------- -*/
 
+    .spotlight {
+        height: auto;
+    }
+
     .mission-container h2 {
         text-align: center;
     }
@@ -1578,7 +1585,8 @@ form {
         display: block;
         left: -200px;
         width: 2000px;
-        bottom: -100px;
+        height: 150px;
+        bottom: -80px;
     }
 
     /*-- -------------------------- -->
@@ -1842,8 +1850,9 @@ form {
 
     .honeycomb-long {
         display: block;
-        bottom: -140px !important;
+        bottom: -130px !important;
         width: 3000px !important;
+        height: auto;
         left: -860px !important;
         -webkit-transform: rotate(.5deg);
             -ms-transform: rotate(.5deg);
@@ -2162,6 +2171,7 @@ form {
 
     .spotlight {
         width: 450px;
+        height: auto;
     }
 
     .spotlight-content {
@@ -2303,7 +2313,8 @@ form {
         display: block;
         position: absolute;
         width: 3000px;
-        bottom: -130px;
+        height: auto;
+        bottom: -140px;
         left: -240px;
         -webkit-transform: rotate(.5deg);
             -ms-transform: rotate(.5deg);
