@@ -934,10 +934,16 @@ footer p {
 	position: relative;
 }
 
-.footer-call i {
-	color: var(--primary);
-	font-size: 1.5em;
+.item-content svg {
+    width: 15px;
+    height: auto;
 	margin-right: 10px;
+}
+
+footer a svg {
+    width: 30px !important;
+    margin-top: 30px;
+    margin-right: 20px !important;
 }
 
 .social {
