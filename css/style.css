@@ -2255,6 +2255,10 @@ form {
         margin-right: 36px;
     }
 
+    .team-card img {
+        height: auto;
+    }
+
     #meet-the-team h2, #meet-the-team h3 {
         width: 500px;
     }
