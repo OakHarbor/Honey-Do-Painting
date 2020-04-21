@@ -75,7 +75,7 @@ body.dark-mode {
 .white-comb {
     position: absolute;
     width: 100%;
-    bottom: -2px;
+    bottom: -4px;
     z-index: 100;
 }
 
@@ -381,7 +381,7 @@ form p{
         display: block;
         position: absolute;
         width: 100%;
-        bottom: 0;
+        bottom: -3px;
         z-index: 40;
     }
 
@@ -419,9 +419,9 @@ form p{
 
     .contact-right {
         width: 300px;
-        -webkit-transform: translateY(-150px);
-            -ms-transform: translateY(-150px);
-              transform: translateY(-150px);
+        -webkit-transform: translateY(-100px);
+            -ms-transform: translateY(-100px);
+              transform: translateY(-100px);
     }
 
 }
