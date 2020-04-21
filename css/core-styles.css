@@ -967,8 +967,12 @@ footer a svg {
             transition: .3s ease;
 }
 
+.bbb {
+    margin-top: 20px !important;
+}
+
 .footer-donate {
-    margin-top: 40px;
+    margin-top: 0px;
     width: 200px;
 }
 
