@@ -301,6 +301,12 @@ var $numberItemH4 = $('.number-item h4');
 var $squareH2 = $('.square h2');
 
 // -------------------------------------------
+//             STORIES PAGE
+//--------------------------------------------
+
+var $story = $(".story");
+
+// -------------------------------------------
 //             CONTACT PAGE
 //--------------------------------------------
 
@@ -375,6 +381,12 @@ const enableDarkMode = () => {
 
   $numberItemH4.addClass("dark-mode");
   $squareH2.addClass("dark-mode");
+
+  // -------------------------------------------
+  //             STORIES PAGE
+  //--------------------------------------------
+
+  $story.addClass("dark-mode");
 
   // -------------------------------------------
   //             CONTACT PAGE
@@ -454,6 +466,12 @@ const disableDarkMode = () => {
 
 $numberItemH4.removeClass("dark-mode");
 $squareH2.removeClass("dark-mode");
+
+  // -------------------------------------------
+  //             STORIES PAGE
+  //--------------------------------------------
+
+  $story.removeClass("dark-mode");
 
 // -------------------------------------------
 //             CONTACT PAGE
