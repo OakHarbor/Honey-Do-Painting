@@ -301,6 +301,7 @@ var $blogPostH3 = $(".blog__post h4");
 var $monthsH4 = $(".months a");
 var $monthsH3 = $(".months h3");
 var $headerH1 = $(".blog__post--header h1");
+var $nav = $("nav");
 
 // -------------------------------------------
 //             ABOUT PAGE

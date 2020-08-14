@@ -297,15 +297,15 @@ body.dark-mode {
 }
 
 .dark-side {
-    display: none;
+    display: none !important;
 }
 
 .dark-side.dark-mode {
-    display: block;
+    display: block !important;
 }
 
 .light-side.dark-mode {
-    display: none;
+    display: none !important;
 }
 
 .blog-h3 {
