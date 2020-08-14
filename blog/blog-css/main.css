@@ -4,6 +4,7 @@
 
 .paint-brick-wall {
     background: url("../images/painting-brick-wall.jpg");
+    background-size: cover;
 }
 
 
