@@ -293,6 +293,15 @@ var $teamContentP = $(".team-content p");
 /* Footer */
 var $footer = $("footer");
 
+/* Blog */
+var $SideBarH2 = $("#side-bar h2 a");
+var $lightSide = $(".light-side");
+var $darkSide = $(".dark-side");
+var $blogPostH3 = $(".blog__post h4");
+var $monthsH4 = $(".months a");
+var $monthsH3 = $(".months h3");
+var $headerH1 = $(".blog__post--header h1");
+
 // -------------------------------------------
 //             ABOUT PAGE
 //--------------------------------------------
@@ -396,6 +405,18 @@ const enableDarkMode = () => {
   $contactRightH4.addClass("dark-mode");
   $contactRightA.addClass("dark-mode");
 
+  // -------------------------------------------
+  //              BLOG PAGE
+  //--------------------------------------------
+
+  $SideBarH2.addClass("dark-mode");
+  $lightSide.addClass("dark-mode");
+  $darkSide.addClass("dark-mode");
+  $blogPostH3.addClass("dark-mode");
+  $monthsH4.addClass("dark-mode");
+  $monthsH3.addClass("dark-mode");
+  $headerH1.addClass("dark-mode");
+
   localStorage.setItem("darkMode", "enabled")
 }
 
@@ -480,6 +501,19 @@ $squareH2.removeClass("dark-mode");
 $contactTopper.removeClass("dark-mode");
 $contactRightH4.removeClass("dark-mode");
 $contactRightA.removeClass("dark-mode");
+
+// -------------------------------------------
+//               BLOG PAGE
+//--------------------------------------------
+
+  /* Blog */
+  $SideBarH2.removeClass("dark-mode");
+  $lightSide.removeClass("dark-mode");
+  $darkSide.removeClass("dark-mode");
+  $blogPostH3.removeClass("dark-mode");
+  $monthsH4.removeClass("dark-mode");
+  $monthsH3.removeClass("dark-mode");
+  $headerH1.removeClass("dark-mode");
 
   localStorage.setItem("darkMode", null)
 }
