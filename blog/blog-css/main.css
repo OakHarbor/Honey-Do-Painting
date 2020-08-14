@@ -227,6 +227,7 @@ li h3 {
     width: 20px;
     height: 2px;
     background: var(--primary);
+    top: 10px;
 }
 
 .recent-posts__item {
