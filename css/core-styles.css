@@ -280,11 +280,11 @@ button:hover {
     display: block !important;
     position: absolute;
     width: 530px;
-    -webkit-transform: rotate(120deg);
-        -ms-transform: rotate(120deg);
-            transform: rotate(120deg);
+    -webkit-transform: rotate(130deg);
+        -ms-transform: rotate(130deg);
+            transform: rotate(130deg);
     right: -280px;
-    top: 350px;
+    top: 390px;
     opacity: .4;
 }
 
