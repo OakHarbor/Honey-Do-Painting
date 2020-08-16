@@ -52,6 +52,12 @@ h1, h2, h3, h4, h5, h6 {
 	background: #fff;
     border-bottom: 5px solid var(--primary);
     height: 100px;
+    position: relative;
+    z-index: 1000;
+}
+
+#dark-mode {
+    z-index: 1001;
 }
 
 /* hidden desktop elements */
@@ -307,7 +313,6 @@ button:hover {
 	        justify-content: center;
     height: 100%;
     z-index: 10;
-    background: #fff;
 }
 
 .hamburger {
