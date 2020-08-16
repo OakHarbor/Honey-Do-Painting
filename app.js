@@ -1,3 +1,27 @@
+
+// Pop up action on home page
+
+var $close = $(".close-pop-up");
+var $popUp = $(".pop-up");
+var $form = $(".pop-up-form");
+var $upload = $(".upload-button");
+var $closeForm = $(".close-form");
+
+// click to close pop up
+$close.on("click", function (e) {
+  $popUp.addClass("clicked");
+});
+
+// click to open form
+$upload.on("click", function (e) {
+  $form.addClass("clicked");
+});
+
+// click to close form
+$closeForm.on("click", function (e) {
+  $form.removeClass("clicked");
+});
+
 /* jQuery for the navigation animation */
 
 var $hamburger = $(".hamburger");

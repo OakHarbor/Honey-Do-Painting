@@ -439,6 +439,34 @@
             </g>
             </svg>
             <img aria-hidden="true" class="white-comb" src="/honeycomb-landing-light.svg" alt="">
+
+            <div class="pop-up">
+                <img src="/images/honeycomb.png" alt="">
+                <img class="close-pop-up" src="/images/close.svg" alt="">
+                <div class="left-pop-up">
+                    <p>Need a job?</p>
+                    <p>Just upload your resume!</p>
+                </div>
+                <button class="button-solid quote-button upload-button" type="button">
+                    Upload</button>
+            </div>
+            <div class="pop-up-form">
+                <img class="form-honeycomb" src="/images/honeycomb.png" alt="">
+                <form id="contact" name="Contact Form" method="post" data-netlify-recaptcha="true" data-netlify="true">
+                    <h3 class="contact-topper"><span>Apply</span> With Us</h3>
+                
+                    <input aria-label="name" name="name" placeholder="Your Name" type="text" tabindex="1" required>
+                    <input aria-label="email" name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+                    <input aria-label="phone number" name="phone" placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                    <label for="file-upload">Upload Resume</label>
+                    <input id="file-upload" aria-label="Upload resume" name="Resume" placeholder="Upload Resume" type="file" tabindex="4" required>
+                    <div data-netlify-recaptcha="true"></div>
+                    <p class="form-submit">
+                        <a class="close-form" href="#">Close</a>
+                        <button name="submit" type="submit" id="contact-submit" class="primary button-solid" data-submit="...Sending">Submit</button>
+                    </p>
+                </form>
+            </div>
     </section>
 
     <!-- ============================================ -->
