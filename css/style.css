@@ -245,6 +245,10 @@
     color: #000;
 }
 
+.close-pop-up:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 370px) {
     
     .left-pop-up {
