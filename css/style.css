@@ -2139,24 +2139,30 @@ form {
     }
 
     @-webkit-keyframes popDown {
-    0% {
-        top: -200px;
-    }
+        0% {
+            top: -200px;
+        }
 
-    100% {
-        top: -15px;
+        100% {
+            top: -15px;
+        }
     }
-}
 
     @keyframes popDown {
-    0% {
-        top: -200px;
+        0% {
+            top: -200px;
+        }
+
+        100% {
+            top: -15px;
+        }
     }
 
-    100% {
-        top: -15px;
+    .form-honeycomb {
+        right: -300px;
+        height: 700px;
+        width: auto;
     }
-}
 
     /*-- -------------------------- -->
     <---           GREY BOX         -->
