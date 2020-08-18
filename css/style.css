@@ -2655,11 +2655,13 @@ form {
 
     #subscribe input[type="email"] {
         width: 500px;
+        display: block;
     }
 
     #subscribe button[type="submit"] {
         width: 120px;
         margin: 0 0 0 30px;
+        display: block;
     }
 
     #subscribe {
@@ -2667,15 +2669,18 @@ form {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start;
-        width: 570px;
+        width: 500px;
         margin: auto;
         margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .form-submit {
         margin-top: 20px;
     }
 
