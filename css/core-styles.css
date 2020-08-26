@@ -502,14 +502,14 @@ button:hover {
 }
 
 .contact-group h2 {
-    color: #4c4c4c;
+    color: #000;
     font-size: 1.875em;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .top p {
-    color: #4c4c4c;
+    color: #000;
     text-align: center;
     margin-bottom: 10px;
     font-weight: 900;
@@ -760,6 +760,12 @@ button:hover {
     
     }
 
+    @media screen and (min-width: 1457px) and (max-width: 1580px) {
+
+        .call-us {display: none;}
+    
+    }
+
 	/*-- -------------------------- -->
     <---           LANDING          -->
     <--- -------------------------- -*/
@@ -877,6 +883,10 @@ button:hover {
     .top p {
         width: 600px;
         text-align: left;
+    }
+
+    .contact-button:hover {
+        background: #000;
     }
 }
 

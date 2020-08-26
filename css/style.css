@@ -1553,7 +1553,7 @@ form {
 }
 
 .contact-group h2 {
-    color: #4c4c4c;
+    color: #000;
     font-size: 1.875em;
     margin-bottom: 20px;
 }
@@ -2599,6 +2599,7 @@ form {
         width: 20%;
         margin: 0;
         padding: 0;
+        height: auto;
     }
 
     /*-- -------------------------- -->
