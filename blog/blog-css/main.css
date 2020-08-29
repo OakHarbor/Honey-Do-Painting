@@ -7,6 +7,10 @@
     background-size: cover;
 }
 
+.resume {
+    background: url("../images/resume.jpg");
+    background-size: cover;
+}
 
 p, li {
 	font-family: 'Montserrat', sans-serif;
@@ -296,6 +300,10 @@ body.dark-mode {
 
 #side-bar h2 a.dark-mode {
     color: #fff !important;
+}
+
+.months p.dark-mode {
+    color: #000;
 }
 
 .dark-side {

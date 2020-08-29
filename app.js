@@ -326,6 +326,7 @@ var $monthsH4 = $(".months a");
 var $monthsH3 = $(".months h3");
 var $headerH1 = $(".blog__post--header h1");
 var $nav = $("nav");
+var $2020 = $(".months p");
 
 // -------------------------------------------
 //             ABOUT PAGE
@@ -441,6 +442,7 @@ const enableDarkMode = () => {
   $monthsH4.addClass("dark-mode");
   $monthsH3.addClass("dark-mode");
   $headerH1.addClass("dark-mode");
+  $2020.addClass("dark-mode");
 
   localStorage.setItem("darkMode", "enabled")
 }
@@ -539,6 +541,7 @@ $contactRightA.removeClass("dark-mode");
   $monthsH4.removeClass("dark-mode");
   $monthsH3.removeClass("dark-mode");
   $headerH1.removeClass("dark-mode");
+  $2020.removeClass("dark-mode");
 
   localStorage.setItem("darkMode", null)
 }
