@@ -12,6 +12,11 @@
     background-size: cover;
 }
 
+.kitchen-cabinets {
+    background: url("../images/kitchen-cabinets.jpg");
+    background-size: cover;
+}
+
 p, li {
 	font-family: 'Montserrat', sans-serif;
 	color: #888888;
