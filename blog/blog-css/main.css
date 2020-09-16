@@ -17,6 +17,11 @@
     background-size: cover;
 }
 
+.distressed {
+    background: url("../images/distressed-furniture.jpg");
+    background-size: cover;
+}
+
 p, li {
 	font-family: 'Montserrat', sans-serif;
 	color: #888888;
