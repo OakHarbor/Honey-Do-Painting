@@ -22,6 +22,11 @@
     background-size: cover;
 }
 
+.deck {
+    background: url("../images/deck.jpg");
+    background-size: cover;
+}
+
 p, li {
 	font-family: 'Montserrat', sans-serif;
 	color: #888888;
