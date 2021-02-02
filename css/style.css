@@ -701,9 +701,10 @@ form p{
 <--- -------------------------- -*/
 
 .content {
-    background:url("../images/paintbrush-mobile.jpg");
+    background:url("../images/new-home-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-top: 50px;
     padding-bottom: 150px;
     position: relative;
@@ -781,10 +782,11 @@ form p{
     left: 0;
     bottom: -10px;
     position: absolute;
-    background: rgb(41,162,228);
-    background: -o-radial-gradient(circle, rgba(41,162,228,1) 0%, rgba(45,180,253,1) 0%, rgba(23,90,127,1) 84%);
-    background: radial-gradient(circle, rgba(41,162,228,1) 0%, rgba(45,180,253,1) 0%, rgba(23,90,127,1) 84%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#29a2e4",endColorstr="#175a7f",GradientType=1);
+    background: rgb(34,34,34);
+background: -moz-radial-gradient(circle, rgba(34,34,34,0.7707457983193278) 22%, rgba(9,8,5,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(34,34,34,0.7707457983193278) 22%, rgba(9,8,5,1) 100%);
+background: radial-gradient(circle, rgba(34,34,34,0.7707457983193278) 22%, rgba(9,8,5,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222222",endColorstr="#090805",GradientType=1);
     opacity: .89;
 }
 
@@ -2351,17 +2353,19 @@ form {
     <---          TRUST US          -->
     <--- -------------------------- -*/
 
-    #trust-us {
-        background: url("/images/paintbrush.jpg");
-    }
-
     .content {
         padding-bottom: 200px;
-        background-attachment: fixed;
+        background-attachment: fixed !important;
+        background:url("../images/new-home-desktop.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     .why-item-container {
-        width: 1100px;
+        width: 100%;
+        padding: 0 10px;
+        max-width: 1100px;
         margin: auto;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2383,7 +2387,8 @@ form {
     }
 
     .why-item {
-        width: 350px;
+        width: 280px;
+        padding: 0;
     }
 
     .why-item p {
@@ -2730,7 +2735,7 @@ form {
     }
 
     .headings {
-        width: 600px;
+        width: 550px;
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
                 order: 2;
@@ -2747,7 +2752,9 @@ form {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        width: 1100px;
+        width: 100%;
+        padding: 0 10px;
+        max-width: 1100px;
         margin: auto;
     }
 
@@ -2806,7 +2813,9 @@ form {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        width: 1100px;
+        width: 100%;
+        padding: 0 10px;
+        max-width: 1100px;
         margin: auto;
     }
 
