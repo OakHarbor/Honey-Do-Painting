@@ -807,16 +807,14 @@ body.dark-mode {
     <--- -------------------------- -*/
 
     #hero {
-        height: 1100px;
+        height: 760px;
         background-attachment: fixed;
         position: relative;
     }
 
     #home-h {
-        -webkit-transform: translateY(30px);
-            -ms-transform: translateY(30px);
-                transform: translateY(30px);
         font-size: 4.375em;
+        margin-bottom: 0;
     }
 
     #hero img {

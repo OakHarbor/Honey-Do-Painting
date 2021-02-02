@@ -260,15 +260,12 @@ html.clicked {
 @media screen and (min-width: 1025px) {
 
     #hero {
-        height: 1100px;
+        height: 760px;
         background-attachment: fixed;
         position: relative;
     }
 
     #home-h {
-        -webkit-transform: translateY(-90px);
-            -ms-transform: translateY(-90px);
-                transform: translateY(-90px);
         font-size: 4.375em;
     }
 

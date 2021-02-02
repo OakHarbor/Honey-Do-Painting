@@ -393,15 +393,12 @@ form {
     <--- -------------------------- -*/
 
     #hero {
-        height: 1100px;
+        height: 760px;
         background-attachment: fixed;
         position: relative;
     }
 
     #home-h {
-        -webkit-transform: translateY(-120px);
-            -ms-transform: translateY(-120px);
-                transform: translateY(-120px);
         font-size: 4.375em;
     }
 

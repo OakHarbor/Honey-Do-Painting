@@ -231,6 +231,10 @@ a.active-menu.dark-mode {
     background: var(--medium);
 }
 
+.dark-comb {
+    display: none;
+}
+
 /*-- -------------------------- -->
 <---          TRUST US          -->
 <--- -------------------------- -*/

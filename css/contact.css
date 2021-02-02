@@ -68,15 +68,12 @@ body.dark-mode {
     z-index: -1;
 }
 
-#hero img {
-    display: none;
-}
-
 .white-comb {
     position: absolute;
     width: 100%;
     bottom: -4px;
     z-index: 100;
+    display: block;
 }
 
 .white-comb.dark-mode {
@@ -365,16 +362,13 @@ form p{
     <--- -------------------------- -*/
 
     #hero {
-        height: 1100px;
+        height: 760px;
         background-attachment: fixed;
         position: relative;
     }
 
     #home-h {
         font-size: 4.375em;
-        -webkit-transform: translateY(-100px);
-            -ms-transform: translateY(-100px);
-                transform: translateY(-100px);
     }
 
     #hero img {
@@ -408,6 +402,7 @@ form p{
         padding-bottom: 80px;
         position: relative;
         z-index: 100;
+        margin-top: 140px;
     }
 
     #contact {
